@@ -4,6 +4,7 @@ async function loadFileAndPrintToConsole(url) {
       const data_raw = await response.text();
       const about_array = data_raw.split('\n');
       const data = "";
+      console.log(about_array)
       for(var line = 0; line < about_array.length; line++){
         data = data + "<p>" + about_array[line] + "</p>";
       }
